@@ -12,6 +12,8 @@
 		FA89A44E1DB96D2B0091A995 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA89A44C1DB96D2B0091A995 /* Main.storyboard */; };
 		FA89A4501DB96D2B0091A995 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA89A44F1DB96D2B0091A995 /* Assets.xcassets */; };
 		FA89A4531DB96D2B0091A995 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA89A4511DB96D2B0091A995 /* LaunchScreen.storyboard */; };
+		FA89A45D1DB972DB0091A995 /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89A45C1DB972DB0091A995 /* BlueViewController.swift */; };
+		FA89A45F1DB9737E0091A995 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89A45E1DB9737E0091A995 /* GreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		FA89A44F1DB96D2B0091A995 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA89A4521DB96D2B0091A995 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA89A4541DB96D2B0091A995 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA89A45C1DB972DB0091A995 /* BlueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
+		FA89A45E1DB9737E0091A995 /* GreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				FA89A44F1DB96D2B0091A995 /* Assets.xcassets */,
 				FA89A4511DB96D2B0091A995 /* LaunchScreen.storyboard */,
 				FA89A4541DB96D2B0091A995 /* Info.plist */,
+				FA89A45C1DB972DB0091A995 /* BlueViewController.swift */,
+				FA89A45E1DB9737E0091A995 /* GreenViewController.swift */,
 			);
 			path = TabBarExample;
 			sourceTree = "<group>";
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA89A45F1DB9737E0091A995 /* GreenViewController.swift in Sources */,
 				FA89A44B1DB96D2B0091A995 /* ViewController.swift in Sources */,
+				FA89A45D1DB972DB0091A995 /* BlueViewController.swift in Sources */,
 				FA89A4491DB96D2B0091A995 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

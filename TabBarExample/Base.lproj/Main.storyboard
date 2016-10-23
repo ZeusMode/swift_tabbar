@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="abl-1S-fqZ">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Vermelho-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TabBarExample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -18,9 +19,73 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Vermelho" image="livro" id="Hgi-aT-cLP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="921" y="-234"/>
+        </scene>
+        <!--Azul-->
+        <scene sceneID="5Ut-vW-jb8">
+            <objects>
+                <viewController id="VQr-sh-M87" customClass="BlueViewController" customModule="TabBarExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EY0-re-dck"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tbl-bg-zne"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ye9-0k-zwa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Azul" image="relogio" id="UZf-it-Gxp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gjo-at-uVb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="921" y="537"/>
+        </scene>
+        <!--Verde-->
+        <scene sceneID="POX-3G-f2v">
+            <objects>
+                <viewController id="DhT-gL-jgC" customClass="GreenViewController" customModule="TabBarExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Qq-s1-cPu"/>
+                        <viewControllerLayoutGuide type="bottom" id="bsZ-IP-s3A"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ELi-F0-pfB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Verde" image="coracao" id="EnH-t2-Vfj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oW4-8c-lY4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1894" y="139"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="BOp-0n-zI5">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="abl-1S-fqZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="BY0-hs-TTm">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Nga-lo-NEg"/>
+                        <segue destination="VQr-sh-M87" kind="relationship" relationship="viewControllers" id="X1B-Ta-Zkm"/>
+                        <segue destination="DhT-gL-jgC" kind="relationship" relationship="viewControllers" id="XPh-Vr-kxE"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T3i-o3-wcC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="coracao" width="24" height="24"/>
+        <image name="livro" width="24" height="24"/>
+        <image name="relogio" width="24" height="24"/>
+    </resources>
 </document>
